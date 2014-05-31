@@ -1,0 +1,262 @@
+<div id="form_oferta" class="box_form">
+		
+	<div class="bg_title_a">
+		<h4 class="title_a">Oferta de {{page_title}}</h4>
+	</div>
+	User: {{page.login.user_login}} <br>
+	Email: {{page.login.user_email}} <br>
+	First Name: {{page.login.user_firstname}} <br>
+	Last Name: {{page.login.user_lastname}} <br>
+	Display Name: {{page.login.display_name}} <br>
+
+
+	<form action="http://wp.exp.local/wp-login.php?action=register" method="post">
+		
+		<!-- a -->
+		<div class="row">
+			<!-- 1 -->
+			<div class="large-6 columns">
+				<label for="user_login">* Usuário:</label>
+			    <input type="text" name="user_login" value="" id="user_login" class="input" placeholder="Nome de usuário" required />
+			</div>
+			<!-- 2 -->
+		    <div class="large-6 columns">
+		    	<label for="user_email">* E-mail:</label>
+		    	<input type="text" name="user_email" value="" id="user_email" class="input"  placeholder="Email do usuário" required />
+		    </div>
+
+		</div>
+
+	    	    <!--	Start code from Cimy User Extra Fields 2.6.2	Copyright (c) 2006-2013 Marco Cimmino	http://www.marcocimmino.net/cimy-wordpress-plugins/cimy-user-extra-fields/	-->
+		<input type="hidden" name="cimy_post" value="1" />
+
+		<!-- b -->
+		<div class="row">
+			<!-- 3 -->
+			<div class="large-6 columns">
+				<div class="row collapse">
+					<label for="cimy_uef_wp_6">* Nome:</label>
+
+					<div class="small-3 columns">
+						<select name="cimy_uef_TRAT_NOME" id="cimy_uef_2" class="cimy_uef_input_27">
+							<option value="?">?</option>
+							<option value="Sr.">Sr.</option>
+							<option value="Sra.">Sra.</option>
+							<option value="Dr.">Dr.</option>
+							<option value="Dra.">Dra.</option>
+						</select>
+					</div>
+
+					<div class="small-9 columns">
+						<input type="text" name="cimy_uef_wp_FIRSTNAME" id="cimy_uef_wp_6" class="cimy_uef_input_27" value="" maxlength="100" placeholder="Nome para contato" required/>
+					</div>
+				</div>
+			</div>
+			<!-- 4 -->
+			<div class="large-6 columns">
+				<label for="cimy_uef_5">Cargo</label>
+				<input type="text" placeholder="Cargo que ocupa na empresa" name="cimy_uef_CARGO" id="cimy_uef_5" class="cimy_uef_input_27" value="" maxlength="50" />
+			</div>
+		</div>
+	
+		<!-- c -->
+		<div class="row">
+			<!-- 5 -->
+			<div class="large-6 columns">
+				<label for="cimy_uef_1">* Telefone:</label>
+				<input type="text" name="cimy_uef_TELEFONE" placeholder="Telefone para contato" id="cimy_uef_1" class="cimy_uef_input_27" value="" maxlength="15" required />
+			</div>
+			<!-- 6 -->
+			<div class="large-6 columns">
+				<label for="cimy_uef_6">Celular:</label>
+				<input type="text" name="cimy_uef_CELULAR" placeholder="Celular para contato" id="cimy_uef_6" class="cimy_uef_input_27" value="" maxlength="15" />
+			</div>
+		</div>
+
+		<!-- d -->
+		<div class="row">
+			<!-- 7 -->
+			<div class="large-6 columns">
+				<label for="cimy_uef_7">Fax:</label>
+				<input type="text" placeholder="O seu número de fax" name="cimy_uef_FAX" id="cimy_uef_7" class="cimy_uef_input_27" value="" maxlength="15" />
+			</div>
+			<!-- 8 -->
+			<div class="large-6 columns">
+				<label for="cimy_uef_wp_7">Website:</label>
+				<input type="text" placeholder="O seu site" name="cimy_uef_wp_WEBSITE" id="cimy_uef_wp_7" class="cimy_uef_input_27" value="" maxlength="100" />
+			</div>
+		</div>
+		
+		<!-- e -->
+		<div class="row">
+			<!-- 9 -->
+			<div class="large-6 columns">
+				<label for="cimy_uef_4">Empresa:</label>
+				<input type="text" placeholder="O nome da sua empresa" name="cimy_uef_EMPRESA" id="cimy_uef_4" class="cimy_uef_input_27" value="" maxlength="50" />
+			</div>
+			
+			<!-- 10 -->
+			<div class="large-6 columns">
+				<div class="row collapse">
+					<label for="cimy_uef_9">* Localidade</label>
+				
+					<div class="small-3 columns">
+						<select name="cimy_uef_ESTADO" id="cimy_uef_9" class="cimy_uef_input_27">
+							<option value="AC">AC</option>
+							<option value="AL">AL</option>
+							<option value="AP">AP</option>
+							<option value="AM">AM</option>
+							<option value="BA">BA</option>
+							<option value="CE">CE</option>
+							<option value="DF">DF</option>
+							<option value="ES">ES</option>
+							<option value="GO">GO</option>
+							<option value="MA">MA</option>
+							<option value="MT">MT</option>
+							<option value="MS">MS</option>
+							<option value="MG">MG</option>
+							<option value="PA">PA</option>
+							<option value="PB">PB</option>
+							<option value="PR">PR</option>
+							<option value="PE">PE</option>
+							<option value="PI">PI</option>
+							<option value="RJ">RJ</option>
+							<option value="RN">RN</option>
+							<option value="RS">RS</option>
+							<option value="RO">RO</option>
+							<option value="RR">RR</option>
+							<option value="SC">SC</option>
+							<option value="SP" selected>SP</option>
+							<option value="SE">SE</option>
+							<option value="TO">TO</option>
+						</select>
+					</div>
+					<div class="small-9 columns">
+						<input type="text" placeholder="A sua cidade" name="cimy_uef_CIDADE" id="cimy_uef_11" class="cimy_uef_input_27" value="" maxlength="50" required />
+					</div>
+				</div>
+			</div>
+		</div>		
+		
+		<!-- f -->
+		<div class="row">
+			<!-- 11 -->
+			<div class="large-12 columns">
+				<label for="cimy_uef_wp_8">Sobre a Sua Empresa/Negócio:</label>
+				<textarea name="cimy_uef_wp_BIO-INFO" id="cimy_uef_wp_8" class="cimy_uef_input_27" rows="3" cols="25"></textarea>
+			</div>
+		</div>
+
+		<!--	End of code from Cimy User Extra Fields	-->
+
+	    <input type="submit" value="Registrar" id="register" />
+	</form>
+
+
+
+
+
+	<div>
+		<form action="">
+			<!-- a -->
+			<div class="row">
+				<!-- 1 -->
+				<div class="large-6 columns">
+					<label for="produto">* Produto:</label>
+					<select name="produto" id="">
+						<option value="Algodão Pluma">Algodão Pluma</option>
+						<option value="Algodão Caroço">Algodão Caroço</option>
+						<option value="Milho Grão">Milho Grão</option>
+						<option value="outro">Outro</option>
+					</select>
+				</div>
+
+				<div class="large-6 columns">
+					<label for="esp_produto">Especificar:</label>
+					<input type="text" name="esp_produto" disabled>
+				</div>
+			</div>
+
+			<!-- b -->
+			<div class="row">
+				<!-- 2 -->
+				<div class="large-6 columns">
+					<div class="row collapse">
+						<label for="quantidade">* Quantidade:</label>
+						<div class="small-3 columns">
+							<select name="unid_quantidade" id="">
+								<option value="">kg</option>
+								<option value="">t</option>
+							</select>
+						</div>
+						<div class="small-9 columns">
+							<input type="text" name="quantidade">
+						</div>
+					</div>
+				</div>
+				<!-- 3 -->
+				<div class="large-6 columns">	
+					<label for="qualidade">* Qualidade:</label>
+					<input type="text" name="qualidade">
+				</div>
+			</div>
+			
+			<!-- 4 -->
+			<div class="row">
+				<div class="large-6 columns">
+					<label for="preco">* Preço:</label>
+					<div class="row collapse">
+						<div class="small-3 columns">
+							<select name="unid_preco" id="">
+								<option value="">R$</option>
+								<option value="">$</option>
+							</select>
+						</div>
+						<div class="small-9 columns">
+							<input type="text" name="preco">
+						</div>
+					</div>
+				</div>
+				.large-6
+			</div>
+			
+
+			<!-- 5 -->
+			<label for="condPagamento">* Cond. Pagamento:</label>
+				<input type="checkbox" name="condPagamento[]" value="à vista" id="">
+				<input type="checkbox" name="condPagamento[]" value="à prazo" id="">
+				<input type="checkbox" name="condPagamento[]" value="à combinar" id="">
+				<input type="checkbox" name="condPagamento[]" value="outro" id="">
+			<input type="text" name="condPagamento[]" placeholder="Especificar">
+
+			<!-- 6 -->
+			<label for="posto">* Posto:</label>
+			<input type="text" name="posto">
+
+			<!-- 7 -->
+			<label for="entrega">* Entrega:</label>
+			<input type="text" name="entrega">
+
+			<!-- 8 -->
+			<label for="validade">* Validade:</label>
+			<input type="date" name="validade">
+
+			<!-- 9 -->
+			<label for="observacoes">Observações:</label>
+			<textarea name="observacoes" id="" cols="30" rows="10"></textarea>
+
+			<!-- FORM TO POST -->
+			<input type="hidden" name="post_title">
+			<!-- angular data composer -->
+			<textarea name="post_content" id="" cols="30" rows="10">
+				
+			</textarea>
+			<input type="hidden" name="post_author_name">
+			<input type="hidden" name="post_status">
+			<input type="hidden" name="post_category">
+
+			
+		</form>
+	</div>
+
+</div>

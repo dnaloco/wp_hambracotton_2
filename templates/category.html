@@ -1,0 +1,41 @@
+<div id="archives" class="box_category">
+	
+	<div class="bg_title_a">
+		<h4 class="title_a">Catedoria de {{page.page_title}}</h4>
+	</div>
+	<div class="archives">
+
+		<div class="posts" data-ng-repeat="post in page.posts">
+			<article class="article_archive">
+				<header>
+					<div class="row colapse">
+						<div class="large-8 medium-8 columns">
+							<h2 class="article_title">
+								<a href="{{post.link}}">
+									{{post.title}}
+								</a>			
+							</h2>
+						</div>
+				
+						<div class="large-4 medium-4 columns">	
+							<div class="pubdate">
+								Publicado em: {{post.time}}
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="article_excerpt">
+					{{post.excerpt}}
+				</div>
+			</article>
+			<hr>
+		</div>
+		
+		<button data-ng-click="getMorePosts()" data-ng-show="showMore">Mais posts</button>
+		<div data-ng-hide="showMore">Não há mais posts</div>
+	</div>
+</div>
+
+
+
+
